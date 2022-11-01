@@ -1,0 +1,10 @@
+<figure class="polaroid-stack">
+  <div>
+    <%= render "polaroid/single" %>
+    <%= render "polaroid/single" %>
+    <%= render "polaroid/single" %>
+    <%= render "polaroid/single" %>
+    <%= render "polaroid/single", photo: album.cover %>
+  </div>
+  <figcaption><%= album.name %></figcaption>
+</figure>

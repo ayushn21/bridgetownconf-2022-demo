@@ -1,0 +1,7 @@
+<figure class="polaroid">
+  <% if defined?(photo) %>
+    <img src="/photographs/<%= photo.relative_file_path %>" loading="lazy">
+  <% else %>
+    <img src="">
+  <% end %>
+</figure>

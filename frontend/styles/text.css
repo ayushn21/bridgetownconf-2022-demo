@@ -1,0 +1,29 @@
+body {
+  font-family: var(--monospace);
+  line-height: 1.4;
+  font-size: var(--text-scale-6);
+}
+
+h1 {
+  font-family: var(--serif);
+  font-size: var(--text-scale-12);
+  line-height: 1.2;
+}
+
+h2 {
+  font-family: var(--serif);
+  font-size: var(--text-scale-9);
+  line-height: 1.2;
+}
+
+h3 {
+  font-family: var(--serif);
+  font-size: var(--text-scale-8);
+  line-height: 1.2;
+}
+
+h4 {
+  font-family: var(--serif);
+  font-size: var(--text-scale-7);
+  line-height: 1.2;
+}

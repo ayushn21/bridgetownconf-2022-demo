@@ -1,0 +1,21 @@
+---
+layout: default
+title: Home
+---
+
+<div class="home">
+  <h1>
+    Bridgetown Photo Gallery
+  </h1>
+
+  <br><br>
+  <div class="gallery">
+    <% site.data.albums.each do |album| %>
+      <a href="/<%= album.id %>/">
+        <%= render "polaroid/stack", album: album %>
+      </a>
+    <% end %>
+  </div>
+
+  <br><br>
+</div>

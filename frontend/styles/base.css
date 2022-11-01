@@ -1,0 +1,73 @@
+:root {
+  --serif: 'Old Standard TT', serif;
+  --monospace: 'Courier Prime', Courier, monospace;
+
+  --sizing-scale-base: 16px;
+
+  --sizing-scale-1: calc(var(--sizing-scale-base) * 0.25);
+  --sizing-scale-2: calc(var(--sizing-scale-base) * 0.5);
+  --sizing-scale-3: calc(var(--sizing-scale-base) * 0.75);
+  --sizing-scale-4: calc(var(--sizing-scale-base) * 1);
+  --sizing-scale-5: calc(var(--sizing-scale-base) * 1.5);
+  --sizing-scale-6: calc(var(--sizing-scale-base) * 2);
+  --sizing-scale-7: calc(var(--sizing-scale-base) * 2.5);
+  --sizing-scale-8: calc(var(--sizing-scale-base) * 3);
+  --sizing-scale-9: calc(var(--sizing-scale-base) * 4);
+  --sizing-scale-10: calc(var(--sizing-scale-base) * 6);
+  --sizing-scale-11: calc(var(--sizing-scale-base) * 8);
+  --sizing-scale-12: calc(var(--sizing-scale-base) * 12);
+  --sizing-scale-13: calc(var(--sizing-scale-base) * 16);
+  --sizing-scale-14: calc(var(--sizing-scale-base) * 24);
+  --sizing-scale-15: calc(var(--sizing-scale-base) * 32);
+  --sizing-scale-16: calc(var(--sizing-scale-base) * 40);
+  --sizing-scale-17: calc(var(--sizing-scale-base) * 48);
+  --sizing-scale-18: calc(var(--sizing-scale-base) * 56);
+  --sizing-scale-19: calc(var(--sizing-scale-base) * 64);
+
+  --text-scale-1: 12px;
+  --text-scale-2: 14px;
+  --text-scale-3: 16px;
+  --text-scale-4: 18px;
+  --text-scale-5: 20px;
+  --text-scale-6: 24px;
+  --text-scale-7: 30px;
+  --text-scale-8: 36px;
+  --text-scale-9: 48px;
+  --text-scale-10: 60px;
+  --text-scale-11: 72px;
+  --text-scale-12: 88px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+  min-height: 100vh;
+}
+
+nav {
+  text-align: center;
+
+  & a {
+    font-size: 0.9em;
+    text-decoration: underline;
+  }
+}
+
+.home {
+  max-width: 80vw;
+  margin: auto;
+  margin-top: var(--sizing-scale-9);
+
+  & h1 {
+    text-align: center;
+  }
+}

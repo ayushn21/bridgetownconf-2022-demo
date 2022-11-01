@@ -1,0 +1,11 @@
+<div class="album">
+  <h1><%= page.data.album.name %></h1>
+  <br><br>
+  <div class="gallery">
+    <% page.data.album.photos.each do |photo| %>
+      <a href="/<%= photo.relative_path.chomp('.jpg') %>">
+        <%= render "polaroid/single", photo: photo %>
+      </a>
+    <% end %>
+  </div>
+</div>

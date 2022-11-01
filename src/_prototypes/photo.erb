@@ -1,0 +1,74 @@
+<div class="photo">
+  <image-container>
+    <img src="/photographs/<%= page.data.photo.relative_file_path %>">
+  </image-container>
+
+  <navigators-container>
+    <div>
+      <% if page.data.previous_photo.present? %>
+        <% back_path = "/#{page.data.album}/#{page.data.previous_photo.chomp('.jpg')}" %>
+        <a href="<%= back_path %>">
+          <%= svg "/icons/nav_arrow_left.svg", class: "icon" %>
+        </a>
+      <% else %>
+        <a href="" class="hidden">
+          <%= svg "/icons/nav_arrow_left.svg", class: "icon" %>
+        </a>
+      <% end %>
+    </div>
+
+    <div>
+      <% if page.data.next_photo.present? %>
+        <% next_path = "/#{page.data.album}/#{page.data.next_photo.chomp('.jpg')}" %>
+        <a href="<%= next_path %>">
+          <%= svg "/icons/nav_arrow_right.svg", class: "icon" %>
+        </a>
+      <% else %>
+        <a href="" class="hidden">
+          <%= svg "/icons/nav_arrow_right.svg", class: "icon" %>
+        </a>
+      <% end %>
+    </div>
+  </navigators-container>
+
+
+  <data-container>
+    <p>
+      Taken on<br>
+      <strong><%= page.data.photo.taken_on %></strong>
+      <br><br>
+    </p>
+
+    <exif-data>
+      <div title="Camera">
+        <%= svg "/icons/camera.svg", class: "icon" %>
+        <%= page.data.photo.camera %>
+      </div>
+
+      <div title="Lens">
+        <%= svg "/icons/lens.svg", class: "icon" %>
+        <%= page.data.photo.lens %>
+      </div>
+
+      <div title="Shutter Speed">
+        <%= svg "/icons/shutter_speed.svg", class: "icon" %>
+        <%= page.data.photo.shutter_speed %>
+      </div>
+
+      <div title="Aperture">
+        <%= svg "/icons/aperture.svg", class: "icon" %>
+        <%= page.data.photo.aperture %>
+      </div>
+
+      <div title="ISO">
+        <%= svg "/icons/iso.svg", class: "icon" %>
+        <%= page.data.photo.iso %>
+      </div>
+
+      <div title="Focal Length">
+        <%= svg "/icons/focal_length.svg", class: "icon" %>
+        <%= page.data.photo.focal_length %>
+      </div>
+    </exif-data>
+  </data-container>
+</div>

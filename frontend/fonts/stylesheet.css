@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Old Standard TT';
+    src: local('Old Standard TT Italic'), local('OldStandardTT-Italic'),
+        url('./OldStandardTT-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Old Standard TT';
+    src: local('Old Standard TT Bold'), local('OldStandardTT-Bold'),
+        url('./OldStandardTT-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Old Standard TT';
+    src: local('Old Standard TT Regular'), local('OldStandardTT-Regular'),
+        url('./OldStandardTT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Courier Prime';
+    src: local('Courier Prime Regular'), local('CourierPrime-Regular'),
+        url('./CourierPrime-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Courier Prime';
+    src: local('Courier Prime Italic'), local('CourierPrime-Italic'),
+        url('./CourierPrime-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Courier Prime';
+    src: local('Courier Prime Bold Italic'), local('CourierPrime-BoldItalic'),
+        url('./CourierPrime-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Courier Prime';
+    src: local('Courier Prime Bold'), local('CourierPrime-Bold'),
+        url('./CourierPrime-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
