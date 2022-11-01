@@ -23,5 +23,4 @@ permalink: pretty
 template_engine: erb
 
 autoloader_collapsed_paths:
-  - plugins/helpers
   - plugins/models

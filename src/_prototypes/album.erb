@@ -4,7 +4,7 @@
   <div class="gallery">
     <% page.data.album.photos.each do |photo| %>
       <a href="/<%= photo.relative_path.chomp('.jpg') %>">
-        <%= render "polaroid/single", photo: photo %>
+        <%= render Polaroid::Single.new(photo) %>
       </a>
     <% end %>
   </div>

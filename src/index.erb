@@ -12,7 +12,7 @@ title: Home
   <div class="gallery">
     <% site.data.albums.each do |album| %>
       <a href="/<%= album.id %>/">
-        <%= render "polaroid/stack", album: album %>
+        <%= render Polaroid::Stack.new(album) %>
       </a>
     <% end %>
   </div>

@@ -18,18 +18,6 @@ class Photo
     "#{@album.id}/#{filename}"
   end
 
-  def encode_with(coder)
-    coder["album"] = @album
-    coder["filename"] = @filename
-    coder["camera"] = @camera
-    coder["lens"] = @lens
-    coder["taken_on"] = @taken_on
-    coder["shutter_speed"] = @shutter_speed
-    coder["aperture"] = @aperture
-    coder["iso"] = @iso
-    coder["focal_length"] = @focal_length
-  end
-
   private
     def extract_exif_data
       exif_data = EXIFR::JPEG.new(@path)

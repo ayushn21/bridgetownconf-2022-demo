@@ -10,14 +10,6 @@ class Album
     load_photos
   end
 
-  def encode_with(coder)
-    coder["name"] = @name
-    coder["cover"] = @cover
-    coder["photos"] = @photos
-    coder["id"] = @id
-    coder["dir"] = @dir
-  end
-
   private
 
     def load_info

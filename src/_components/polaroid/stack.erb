@@ -1,0 +1,10 @@
+<figure class="polaroid-stack">
+  <div>
+    <% @stack.times do %>
+      <%= render Polaroid::Single.new %>
+    <% end %>
+
+    <%= render Polaroid::Single.new(@album.cover) %>
+  </div>
+  <figcaption><%= @album.name %></figcaption>
+</figure>
