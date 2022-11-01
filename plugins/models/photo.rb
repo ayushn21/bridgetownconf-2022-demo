@@ -11,7 +11,7 @@ class Photo
   end
 
   def relative_file_path
-    "#{@album.type.to_s.pluralize}/#{@album.id}/#{filename}"
+    "albums/#{@album.id}/#{filename}"
   end
 
   def relative_path

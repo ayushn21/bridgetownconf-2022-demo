@@ -1,11 +1,10 @@
 class Album
-  attr_reader :id, :name, :type, :cover, :photos
+  attr_reader :id, :name, :cover, :photos
 
-  def initialize(dir, type)
+  def initialize(dir)
     @dir = dir
     @contents = Dir["#{dir}/*"]
     @id = dir.split("/").last
-    @type = type
 
     load_info
     load_photos
@@ -17,7 +16,6 @@ class Album
     coder["photos"] = @photos
     coder["id"] = @id
     coder["dir"] = @dir
-    coder["type"] = @type
   end
 
   private
