@@ -15,7 +15,7 @@ end
   <p>Payment ID: <%= resource.data.payment_id %></p>
 
   <br><br>
-  <form action="buy" method="post">
+  <form action="<%= api('buy') %>" method="post">
     <input type="text" name="card">
     <input
       type="hidden"
