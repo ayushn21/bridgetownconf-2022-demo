@@ -70,5 +70,17 @@
         <%= page.data.photo.focal_length %>
       </div>
     </exif-data>
+
+    <br>
+
+    <form
+      action="/buy"
+      method="get">
+      <input
+        type="hidden"
+        name="photo"
+        value="<%= page.data.photo.relative_path %>">
+      <button>Buy</button>
+    </form>
   </data-container>
 </div>

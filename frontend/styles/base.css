@@ -71,3 +71,25 @@ nav {
     text-align: center;
   }
 }
+
+button {
+  cursor: pointer;
+  background: black;
+  text-align: center;
+  border-radius: 1em;
+  border: none;
+  padding: var(--sizing-scale-3) var(--sizing-scale-7);
+  line-height: normal;
+  color: white;
+  line-height: 1.5;
+  text-decoration: none;
+  font-size: var(--text-scale-2);
+}
+
+input[type=text] {
+  font-size: var(--text-scale-2);
+  border-radius: 0.6em;
+  border: solid 2px black;
+  padding: var(--sizing-scale-3);
+  outline: none;
+}

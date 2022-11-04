@@ -1,0 +1,12 @@
+.buy {
+  max-width: 80vw;
+  margin: auto;
+  margin-top: var(--sizing-scale-8);
+  text-align: center;
+
+  & img {
+    max-width: 40vw;
+    max-height: 50vh;
+    margin: auto;
+  }
+}

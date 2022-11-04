@@ -1,0 +1,27 @@
+---<%
+r.get do
+  render_with data: {
+    layout: :default,
+    photo_key: params[:photo],
+    payment_id: SecureRandom.uuid
+  }
+end
+%>---
+
+<div class="buy">
+  <h2>Buy this photo</h2>
+  <br>
+  <img src="albums/<%= resource.data.photo_key %>">
+  <p>Payment ID: <%= resource.data.payment_id %></p>
+
+  <br><br>
+  <form action="buy" method="post">
+    <input type="text" name="card">
+    <input
+      type="hidden"
+      name="photo"
+      value="<%= resource.data.photo_key %>">
+
+      <button>Pay</button>
+  </form>
+</div>
