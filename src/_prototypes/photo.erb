@@ -3,35 +3,6 @@
     <img src="/<%= page.data.photo.relative_file_path %>">
   </image-container>
 
-  <navigators-container>
-    <div>
-      <% if page.data.previous_photo.present? %>
-        <% back_path = "/#{page.data.album}/#{page.data.previous_photo.chomp('.jpg')}" %>
-        <a href="<%= back_path %>">
-          <%= svg "/icons/nav_arrow_left.svg", class: "icon" %>
-        </a>
-      <% else %>
-        <a href="" class="hidden">
-          <%= svg "/icons/nav_arrow_left.svg", class: "icon" %>
-        </a>
-      <% end %>
-    </div>
-
-    <div>
-      <% if page.data.next_photo.present? %>
-        <% next_path = "/#{page.data.album}/#{page.data.next_photo.chomp('.jpg')}" %>
-        <a href="<%= next_path %>">
-          <%= svg "/icons/nav_arrow_right.svg", class: "icon" %>
-        </a>
-      <% else %>
-        <a href="" class="hidden">
-          <%= svg "/icons/nav_arrow_right.svg", class: "icon" %>
-        </a>
-      <% end %>
-    </div>
-  </navigators-container>
-
-
   <data-container>
     <p>
       Taken on<br>

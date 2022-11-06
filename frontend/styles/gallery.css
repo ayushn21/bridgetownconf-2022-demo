@@ -50,22 +50,6 @@
     }
   }
 
-  & navigators-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-column: 2;
-    grid-row: 2;
-
-    & .icon {
-      display: block;
-      margin: var(--sizing-scale-4) var(--sizing-scale-8);
-      width: var(--sizing-scale-7);
-      height: var(--sizing-scale-7);
-      stroke: black;
-    }
-  }
-
   & data-container {
     width: 35vw;
     margin: auto;

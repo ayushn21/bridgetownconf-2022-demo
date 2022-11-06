@@ -21,8 +21,8 @@ class Builders::AlbumsBuilder < SiteBuilder
       site.data.albums.each do |album|
         site.generated_pages << Pages::Album.new(site, album)
 
-        album.photos.each_with_index do |photo, index|
-          site.generated_pages << Pages::Photo.new(site, album, photo, index)
+        album.photos.each do |photo|
+          site.generated_pages << Pages::Photo.new(site, album, photo)
         end
       end
     end
